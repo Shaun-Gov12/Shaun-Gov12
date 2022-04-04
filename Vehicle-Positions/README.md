@@ -17,7 +17,7 @@ The C source code was written to follow the algorithm below:
 * Read binary data file and extract the Position ID, Latitude and Longitude for a single vehicle
 * Calculate how far away (the distance) the vehicle is from the mid-point
 * Save the distances and position ID for the first 100 vehicles in 2 seperate arrays
-* (After the first 100 vehicles are read from the data file) If the current distance is smaller than the largest distance from the 100 previous distances save the distance and position ID in arrays
+* (After the first 100 vehicles are read from the data file) If the current distance is smaller than the largest distance from the 100 previous distances save the distance and position ID in arrays (replacing the previous largest distance)
 * All 4 steps above were placed in a loop so that the process would be repeated for vehicles listed in the binary data file
 	
 
