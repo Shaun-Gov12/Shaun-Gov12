@@ -21,8 +21,8 @@ The C source code was written to follow the algorithm below:
 * All 4 steps above were placed in a loop so that the process would be repeated for all vehicles listed in the binary data file
 	
 
-## Posible Improvements
-The solution described above could possibly produce results that are not as accurate at as the "benchmark approach". Speed has been gained at the cost of accuracy. The accuracy of the results could be improved by having 3 or 4 central points instead of just 1 central point. 
+## Possible Improvements
+The solution described above could possibly produce results that are not as accurate at as the "benchmark approach". Speed has been gained at the cost of accuracy. The accuracy of the results could be improved by having 4 central points instead of just 1 central point. 
 Consider a circle that contains inside it all 10 given positions. The circle could then be divided into 4 sections. Each section would then have it's own central point. The algorithm described in the solution (above) could be adapted to work for each individual section and find the closest 25 vehicles per section.
 
 This method would reduce the inaccuracy of the results because the effect of each central point is limited to a quarter of the entire area. However this method does provide a different set of challenges:
