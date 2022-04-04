@@ -1,6 +1,6 @@
 # Design Procedure
 
-## Asumptions
+## Assumptions
 My understanding of the question was that for each of the 10 locations/positions provided the 10 closest vehicles to those positions
 had to be found. In total this is 100 vehicles.
 
@@ -10,6 +10,8 @@ with the 10 given positions.
 ## Solution
 The approach taken in my solution was to find a central position, roughly in the middle of all 10 positions and find the closest 100 
 vehicles to this central position. This method reduces the number of computations by comparing each vehicle's position to a single (central) position. Instead of comparing each vehicle's position to all 10 given positions.
+
+The central position was found by finding the half-way point between the minimum and maximum latitudes for all 10 positions. The same was done for the longitude.
 
 The C source code was written to follow the algorithm below:
 	* Read binary data file and extract the Position ID, Latitude and Longitude for a single vehicle
